@@ -1,16 +1,35 @@
-# flutter_project
+**공공데이터포털 API 활용한 버스 정보 앱 개발**
+  - 국토교통부_(TAGO)_ 버스정류소정보
+  - 국토교통부_(TAGO)_ 버스노선정보
+  - 국토교통부_(TAGO)_ 버스도착정보
+  - 국토교통부_(TAGO)_ 버스위치정보
 
-A new Flutter project.
+지역 선택
+  shared preference로 선택한 지역 유지, 지역 여러 개 선택 가능
+  지역 선택 시 선택된 지역의 정류장 및 버스만 검색 가능 및 검색어 추천
+  버스로 검색 및 정류장으로 검색 탭 분리
 
-## Getting Started
+특정 정류장을 지나가는 버스들
+  특정 정류장을 지나가는 버스들 도착 예정 시간 
+  업데이트 방식 [자동 - polling 방식] [수동 - 새로고침 버튼]
 
-This project is a starting point for a Flutter application.
+특정 정류장 선택 후 지도 선택 시
+  특정 정류장 기반 500m 반경 정류장 마커 표시
 
-A few resources to get you started if this is your first Flutter project:
+메인 화면
+  현재 위치 기반 500m 반경 정류장 마커 표시
+  지역선택(기능 구현 O)
+  지역별 즐겨찾기 나누기
+  버스 및 정류장 즐겨찾기 (특정 정류장을 특정 버스가 지나가는 정보 or 특정 정류장만)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+플로팅 액션 버튼
+  스크롤 상단
+  지도 보기
+  새로고침
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+검색화면
+  버스, 정류장 탭으로 검색기능 분리
+  최근 검색어 저장(shared preference)
+
+특정 버스 선택 후 지도 선택 시
+  버스의 노선 표시  
